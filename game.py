@@ -15,6 +15,7 @@ while True:
         break
     elif type(usr_input) == int or len(usr_input) == 4:
         str_input = str(usr_input)
+        
         if str_input == str_gen_num:
             print("YOU GUESSED THE CORRECT NUMBER HURRAY!!!!!")
             print("IT IS: ", str_gen_num)
@@ -24,9 +25,9 @@ while True:
             c += 1 #counting
             a, b = 0, 0
             for i in range(4):
-                if str_input[i] == str_gen_num[i]:  #correct num and place
+                if str_input[i] == str_gen_num[i]:                                       #correct num and place
                     a += 1
-                if ((str_input[i] != str_gen_num[i]) & (str_input[i] in str_gen_num)):#correct num but not place
+                if ((str_input[i] != str_gen_num[i]) & (str_input[i] in str_gen_num)):   #correct num but not place
                     b += 1
 
             print("You guess:", str_input)
